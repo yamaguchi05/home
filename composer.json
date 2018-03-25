@@ -1,11 +1,4 @@
 {
-    "name": "yui/kakeibo",
-    "authors": [
-        {
-            "name": "yui",
-            "email": "yy.gfmc@gmail.com"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Kakeibo\\" : "./src"
