@@ -2,7 +2,10 @@
 
 namespace Kakeibo\Http;
 
-class Request
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\UriInterface;
+
+class Request implements RequestInterface
 {
     private $get;
     private $post;
@@ -29,5 +32,35 @@ class Request
         }
 
         return $this->post[$post_name];
+    }
+
+    public function getRequestTarget()
+    {
+        // TODO: Implement getRequestTarget() method.
+    }
+
+    public function withRequestTarget($requestTarget)
+    {
+        // TODO: Implement withRequestTarget() method.
+    }
+
+    public function getMethod()
+    {
+        // TODO: Implement getMethod() method.
+    }
+
+    public function withMethod($method)
+    {
+        // TODO: Implement withMethod() method.
+    }
+
+    public function getUri()
+    {
+        // TODO: Implement getUri() method.
+    }
+
+    public function withUri(UriInterface $uri, $preserveHost = false)
+    {
+        // TODO: Implement withUri() method.
     }
 }

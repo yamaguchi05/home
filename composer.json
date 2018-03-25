@@ -5,6 +5,8 @@
         }
     },
     "require": {
-        "twig/twig": "^2.4"
+        "php": ">=7.2.3",
+        "twig/twig": "^2.4",
+        "psr/http-message": "^1.0"
     }
 }
